@@ -1,0 +1,6 @@
+# Ignore everything in this directory, since it's just a useful place to store
+# local files that you don't want to track (could be svg files that are being
+# actively worked on, for example).
+*
+# ...but don't ignore this file
+!.gitignore

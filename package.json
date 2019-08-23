@@ -1,0 +1,55 @@
+{
+  "name": "honestbias",
+  "private": true,
+  "description": "Website for HonestBias (honestbias.com).",
+  "version": "0.1.0",
+  "author": "Caleb Larsen",
+  "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.6",
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.7.3",
+    "gatsby-image": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-netlify": "^2.0.17",
+    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.1",
+    "gatsby-plugin-sitemap": "^2.2.6",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-source-sanity": "^4.0.1",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
+    "prettier": "^1.17.1"
+  },
+  "license": "Various",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write {src,sanity}/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
