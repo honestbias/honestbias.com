@@ -11,6 +11,7 @@ class Footer extends Component {
         <div className={`social-media`}>
           <OutboundLink
             className={`icon`}
+            title={`HonestBias Twitter Profile`}
             href="https://twitter.com/realhonestbias"
             target={`_blank`}
             rel={`noopener noreferrer`}
@@ -19,6 +20,7 @@ class Footer extends Component {
           </OutboundLink>
           <OutboundLink
             className={`icon`}
+            title={`HonestBias Email Address`}
             href="mailto:honestbias@mail.com"
             target={`_blank`}
             rel={`noopener noreferrer`}
@@ -27,6 +29,7 @@ class Footer extends Component {
           </OutboundLink>
           <OutboundLink
             className={`icon`}
+            title={`HonestBias GitHub Repository`}
             href="https://github.com/honestbias/honestbias.com"
             target={`_blank`}
             rel={`noopener noreferrer`}
