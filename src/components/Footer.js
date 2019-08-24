@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import {IoIosMail, IoLogoTwitter} from "react-icons/io";
+import {IoIosMail, IoLogoTwitter, IoLogoGithub} from "react-icons/io";
 import {OutboundLink} from "gatsby-plugin-google-analytics";
 import {Link} from "gatsby";
 
@@ -24,6 +24,14 @@ class Footer extends Component {
             rel={`noopener noreferrer`}
           >
             <IoIosMail />
+          </OutboundLink>
+          <OutboundLink
+            className={`icon`}
+            href="https://github.com/honestbias/honestbias.com"
+            target={`_blank`}
+            rel={`noopener noreferrer`}
+          >
+            <IoLogoGithub />
           </OutboundLink>
         </div>
         <div className={`copyright terms privacy`}>
