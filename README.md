@@ -43,7 +43,7 @@ If there is an issue for the feature/bug you are working on, name the branch `[i
 
 #### Commits
 
-Prefix commit messages with `[branch-name] `. For example, `[5/broken-menu] Fixed the broken menu...`.
+Prefix commit messages with `#[issue-number] `. For example, `#5 Fixed the broken menu...`. Placing `#issue-number` in the commit message will automatically reference the GitHub issue. If there is no issue the commit relates to, prefix the commit message with `[branch-name]`. For example, `broken-menu Fixed the broken menu...`. This at least makes it easy to see what branch for which the commit was initially made.
 
 Prettier is automatically run when committing files to enforce consistency with code formatting.
 
