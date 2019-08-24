@@ -13,6 +13,7 @@
 7. Setup a free account at sanity.io https://sanity.io/syntax (doubles the free plan for Syntax.fm listeners)
 8. Install `@sanity-cli` with `npm i -g @sanity/cli` https://www.sanity.io/docs/reference/cli
 9. Change directories into `honestbias.com/sanity` with `cd sanity`.
+10. Run `npm i` to install packages (there is a separate `package.json` in this directory).
 10. Copy `sanity-template.json` to `sanity.json` with `cp sanity-template.json sanity.json`.
 10. Run `sanity init` and follow the prompts to login to your Sanity account.
 11. Follow the prompt and set a Project Name (can be whatever you want, like `HonestBias_CoolGuy88`).
