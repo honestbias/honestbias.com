@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import {ARTICLE_BASE_URL} from "../constants/general";
 import SEO from "../components/SEO";
+import Helmet from "react-helmet";
 
 class Article extends Component {
   parseDate(date) {
@@ -42,12 +43,20 @@ class Article extends Component {
     return (
       <Layout>
         <SEO {...seoProps} />
+        <Helmet>
+          <script defer src="https://cdn.commento.io/js/commento.js" />
+          <script src="https://cdn.commento.io/js/count.js" />
+        </Helmet>
         <div className={`article-content ${this.props.className}`}>
           {title}
           {author}
           {publishedAtP}
+          <a href={`#commento`} className={`comment-count-link`}>
+            comments
+          </a>
           <PortableText blocks={body} serializers={serializers} />
         </div>
+        <div id="commento" />
       </Layout>
     );
   }
@@ -61,7 +70,8 @@ export default styled(Article)`
   }
 
   .author,
-  .date-published {
+  .date-published,
+  .comment-count-link {
     font-size: 0.8em;
   }
 `;

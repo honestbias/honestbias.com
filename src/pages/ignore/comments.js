@@ -11,7 +11,7 @@ const CommentsIgnorePage = () => (
     <div>
       Let's put some comments below! <a href={`#commento`}>comments</a>
     </div>
-    <div id="commento" data-auto-init="true" />
+    <div id="commento" />
   </Layout>
 );
 
