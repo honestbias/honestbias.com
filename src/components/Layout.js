@@ -55,6 +55,10 @@ export default styled(Layout)`
 
   text-align: center;
 
+  #commento {
+    text-align: left;
+  }
+
   a {
     color: inherit;
     text-decoration: underline;
