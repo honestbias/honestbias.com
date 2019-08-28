@@ -17,7 +17,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // Ignore all paths beginning with /ignore/
+        exclude: ["/ignore/*"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

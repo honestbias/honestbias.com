@@ -1,1 +1,4 @@
 Sitemap: https://honestbias.com/sitemap.xml
+
+User-agent: *
+Disallow: /ignore/
