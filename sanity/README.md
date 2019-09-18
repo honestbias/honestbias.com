@@ -8,6 +8,5 @@ To import, run `sanity dataset import [destination-dataset] exports/production-d
 
 ## Deploying Schema
 
-1. `sanity build`
 2. `sanity deploy` (may need to `sanity login` first)
-3. `sanity graphql deploy` (to work locally)
+3. `sanity graphql deploy` (to deploy graphql API)

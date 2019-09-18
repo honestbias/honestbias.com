@@ -7,7 +7,7 @@
 1. Ensure you have `git` installed.
 2. Ensure you have `node.js` installed (using the installer will install `npm` as well, which is necessary to continue). https://nodejs.org/en/
 3. Install `gatsby-cli` with `npm i -g gatsby-cli` https://www.gatsbyjs.org/docs/gatsby-cli/
-4. Clone HonestBias.com repository with `git clone https://github.com/MuffinTheMan/honestbias.com.git`.
+4. Clone HonestBias.com repository with `git clone https://github.com/honestbias/honestbias.com.git`.
 5. Change directories into newly cloned repository `cd honestbias.com`.
 6. Run `npm i` to install packages.
 7. Setup a free account at sanity.io https://sanity.io/syntax (doubles the free plan for Syntax.fm listeners)
