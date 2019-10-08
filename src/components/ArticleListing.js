@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import styled from "styled-components";
 import {Link} from "gatsby";
 import {ARTICLE_BASE_URL} from "../constants/general";
+import {primaryColor, accentColor} from "../constants/style";
 
 class ArticleListing extends Component {
   render() {
@@ -15,12 +16,23 @@ class ArticleListing extends Component {
         return (
           <div className={`article-listing`}>
             {hr}
-            <Link to={`${ARTICLE_BASE_URL}${article.slug.current}`}>
+            <Link
+              className={`header-link`}
+              to={`${ARTICLE_BASE_URL}${article.slug.current}`}
+            >
               <h3>
                 {article.title} - By {article.author.name}
               </h3>
-              <p>{article.synopsis}</p>
             </Link>
+            <p>
+              {article.synopsis}{" "}
+              <Link
+                className={`article-link`}
+                to={`${ARTICLE_BASE_URL}${article.slug.current}`}
+              >
+                Read article
+              </Link>
+            </p>
           </div>
         );
       })
@@ -39,9 +51,14 @@ class ArticleListing extends Component {
 export default styled(ArticleListing)`
   text-align: left;
 
-  .article-listing {
-    a {
-      text-decoration: none;
-    }
+  .header-link {
+    font-size: 1.2em;
+    color: ${primaryColor};
+    text-decoration: none;
+  }
+
+  .article-link {
+    color: ${accentColor};
+    text-decoration: underline;
   }
 `;

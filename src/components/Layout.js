@@ -106,6 +106,11 @@ export default styled(Layout)`
     line-height: 1.7;
   }
 
+  li {
+    font-size: 1.2em;
+    line-height: 1.7;
+  }
+
   footer {
     background: ${primaryColor};
     color: white;
