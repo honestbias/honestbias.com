@@ -78,6 +78,7 @@ export default styled(Layout)`
 
   main {
     margin: 3rem auto 0;
+    padding: 0 24px;
     max-width: 800px;
   }
 
