@@ -77,7 +77,8 @@ export default styled(Layout)`
   }
 
   main {
-    margin: 3rem 10vw 0 10vw;
+    margin: 3rem auto 0;
+    max-width: 800px;
   }
 
   .page-body {
@@ -89,6 +90,19 @@ export default styled(Layout)`
     min-height: 5rem;
     font-size: 1rem;
     margin-top: 3rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.7;
   }
 
   footer {
