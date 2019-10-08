@@ -84,7 +84,7 @@ export default styled(Navigation)`
     .left,
     .right {
       position: absolute;
-      top: 2rem;
+      top: 1.5rem;
     }
 
     .left {
@@ -106,6 +106,7 @@ export default styled(Navigation)`
     }
 
     li.nav-item a {
+      font-size: 1rem;
       color: inherit;
       &:visited {
         color: inherit;
@@ -128,7 +129,7 @@ export default styled(Navigation)`
       }
     }
 
-    li {
+    li.nav-item {
       line-height: ${mobileNavItemHeight};
 
       a {

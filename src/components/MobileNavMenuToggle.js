@@ -10,7 +10,10 @@ class MobileNavMenuToggle extends PureComponent {
         onClick={this.props.onClick}
       />
     ) : (
-      <IoMdMenu className={this.props.className} onClick={this.props.onClick} />
+      <IoMdMenu
+        className={`hamburger ${this.props.className}`}
+        onClick={this.props.onClick}
+      />
     );
   }
 }
@@ -30,5 +33,9 @@ export default styled(MobileNavMenuToggle)`
 
   &:hover {
     cursor: pointer;
+  }
+
+  &.hamburger {
+    top: 12px;
   }
 `;
