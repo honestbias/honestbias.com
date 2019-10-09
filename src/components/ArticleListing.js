@@ -25,7 +25,7 @@ class ArticleListing extends Component {
               </h3>
             </Link>
             <p>
-              {article.synopsis}{" "}
+              {article.synopsis + ' '}
               <Link
                 className={`article-link`}
                 to={`${ARTICLE_BASE_URL}${article.slug.current}`}
