@@ -49,11 +49,13 @@ class Article extends Component {
         </Helmet>
         <div className={`article-content ${this.props.className}`}>
           {title}
-          {author}
-          {publishedAtP}
-          <a href={`#commento`} className={`comment-count-link`}>
-            comments
-          </a>
+          <div className={`article-info`}>
+            {author}
+            {publishedAtP}
+            <a href={`#commento`} className={`comment-count-link`}>
+              comments
+            </a>
+          </div>
           <PortableText blocks={body} serializers={serializers} />
         </div>
         <div id="commento" />
@@ -73,5 +75,22 @@ export default styled(Article)`
   .date-published,
   .comment-count-link {
     font-size: 0.8em;
+    margin: 0 8px;
+  }
+
+  .author {
+    margin-left: 0;
+  }
+
+  .author:after,
+  .date-published:after {
+    content: "•";
+    position: relative;
+    right: -8px;
+  }
+
+  .article-info {
+    display: flex;
+    justify-content: flex-start;
   }
 `;
