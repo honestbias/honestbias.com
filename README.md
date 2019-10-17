@@ -17,12 +17,12 @@
 10. Copy `sanity-template.json` to `sanity.json` with `cp sanity-template.json sanity.json`.
 10. Run `sanity init` and follow the prompts to login to your Sanity account.
 11. Follow the prompt and set a Project Name (can be whatever you want, like `HonestBias_CoolGuy88`).
-12. Follow the prompt and set a name for your dataset (recommend `development` or something to start out).
+12. Follow the prompt and set a name for your dataset (for example we'll call it `development`).
 13. Follow the prompt and set the dataset visibility to Private.
 14. Skip the remaining prompts (unless you want to join the developer community, which is actually very helpful).
-15. Import production dataset (see sanity/README.md for more details) like `sanity dataset import production-dataset-[mm-dd-YYYY].tar.gz [destination-dataset]` (use the name of the dataset you created above)
+15. Import latest production dataset in the `sanity/exports` folder (see sanity/README.md for more details) like `sanity dataset import exports/production-dataset-[mm-dd-YYYY].tar.gz development` (`development` should be the name of the dataset you created above)
 16. After import completes, run `sanity deploy`.
-17. When prompted for Studio hostname, enter something that is unique and makes sense or sounds cool to you.
+17. When prompted for Studio hostname, enter something that is unique and makes sense or sounds cool to you (`HB_YourName` or something similar).
 18. Once complete, you can visit your studio at the url provided (also can be accessed via https://manage.sanity.io). The data imported should all be visible (and should be fairly close to what is currently live on the site).
 19. Back in your terminal, run `sanity graphql deploy` and choose `N` when prompted to skip enabling GraphQL playground.
 20. Back in the root of the repository (`honestbias.com/`, so run `cd ..`), cp `.env.template` to `.env.development` with `cp .env.template .env.development`.
@@ -30,7 +30,7 @@
 22. Edit `.env.development` with the settings for the Sanity project you just setup. Use the token generated above for `SANITY_TOKEN`. The Project ID is visible in your Sanity account (manage.sanity.io). The dataset name is in your Sanity account under Datasets.
 23. Copy `.env.development` to `.env.production` (currently, there is no distinction) with `cp .env.development .env.production`
 24. Run `gatsby develop`. If the setup all went as planned, this should build the site and give you the url to visit it locally (http://localhost:8000/)!
-25. The site should now work locally, and you should be able to make changes and see most of them take effect with the hot reloading. Note: some changes will require a rebuild (`ctrl c` then `gatsby develop` again). One of the biggest examples would be when a change is made in your Sanity Studio to update content.
+25. The site should now work locally, and you should be able to make changes and see most of them take effect with the hot reloading. Note: some changes will require a rebuild (`ctrl+c` then `gatsby develop` again). One of the biggest examples would be when a change is made in your Sanity Studio to update content.
 26. To test a local production build, run `gatsby build` and `gatsby serve`. The new url should be http://localhost:9000/.
 27. Celebrate!
 
