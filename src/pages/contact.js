@@ -3,6 +3,7 @@ import {graphql} from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import PageBody from "../components/PageBody";
+import ContactForm from "../components/ContactForm";
 
 const ContactPage = ({data}) => (
   <Layout>
@@ -12,6 +13,7 @@ const ContactPage = ({data}) => (
       description={`Have a question or feedback? Do you want to help provide content or otherwise improve the site? Get in touch with us.`}
     />
     <PageBody body={data.sanityPage._rawBody} />
+    <ContactForm />
   </Layout>
 );
 
