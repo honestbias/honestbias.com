@@ -72,8 +72,7 @@ export default styled(Article)`
     margin-left: 0;
   }
 
-  .author:after,
-  .date-published:after {
+  .author:after {
     content: "•";
     position: relative;
     right: -8px;
